@@ -1,16 +1,10 @@
 
-.typing-header {
-  /* ... (other styles) */
-  font-family: "Outfit", serif;
-  font-optical-sizing: auto;
-  
-}
-body{
-  font-family: 'Roboto', sans-serif;
-}
+
+
 body {
-  background-color: #f0f0f0; /* Light background */
-  color: #333; /* Dark text for contrast */
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0; 
+  color: #333;
   font-family: 'Roboto', sans-serif;
   margin: 0;
   display: flex;
@@ -23,9 +17,9 @@ body {
   width: 90%;
   max-width: 600px;
   padding: 20px;
-  background-color: #fff; /* White container */
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Very light shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .search-form {
@@ -37,10 +31,10 @@ body {
   display: flex;
   align-items: center;
   border-radius: 25px;
-  background-color: #f8f8f8; /* Light gray input background */
+  background-color: #f8f8f8;
   padding: 10px;
   border: 1px solid #ddd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02); /* Even lighter shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02); 
   overflow: hidden;
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
@@ -111,22 +105,22 @@ input[type="text"] {
   display: block;
 }
 
-/* ... (rest of your CSS) */
+
 
 .typing-header {
-  text-align: center; /* Center the header */
+  text-align: center; 
   font-size: 2em;
   margin-bottom: 20px;
-  white-space: nowrap; /* Prevent text from wrapping */
-  overflow: hidden; /* Hide overflowing text */
+  white-space: nowrap; 
+  overflow: hidden;
 }
 
 .cursor {
   display: inline-block;
-  width: 2px; /* Adjust cursor width */
-  background-color: #333; /* Cursor color */
+  width: 2px;
+  background-color: #333; 
   margin-left: 4px;
-  animation: blink 1s step-end infinite; /* Blinking animation */
+  animation: blink 1s step-end infinite; 
 }
 
 @keyframes blink {
@@ -137,15 +131,21 @@ input[type="text"] {
 
 .result-author {
   color: blue;
-  font-weight: bold; /* Optional for emphasis */
-  margin-left: 5px; /* Add spacing if needed */
+  font-weight: bold; 
+  margin-left: 5px; 
 }
 
 .result-title {
-  text-decoration: none; /* Optional: remove underline for links */
-  color: inherit; /* Keep the default color for the title */
+  text-decoration: none;
+  color: inherit;
 }
 
 .result-item {
-  margin-bottom: 10px; /* Space between results */
+  margin-bottom: 10px;
+}
+
+.typing-header {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  
 }
