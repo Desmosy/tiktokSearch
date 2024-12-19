@@ -1,0 +1,151 @@
+
+.typing-header {
+  /* ... (other styles) */
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: #f0f0f0; /* Light background */
+  color: #333; /* Dark text for contrast */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff; /* White container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Very light shadow */
+}
+
+.search-form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #f8f8f8; /* Light gray input background */
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02); /* Even lighter shadow */
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.input-wrapper:focus-within {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  border-color: #bbb;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 10px;
+  outline: none;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  color: #00ADB5;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s ease, opacity 0.2s;
+  opacity: 0.7;
+}
+.search-button svg{
+  width: 24px;
+  height: 24px;
+}
+
+.search-button:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.error-message, .no-results{
+  color: #fc5c65;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.results-container {
+  margin-top: 20px;
+}
+
+.result-item {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s;
+}
+
+.result-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-color: #ddd;
+}
+
+.result-item a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+/* ... (rest of your CSS) */
+
+.typing-header {
+  text-align: center; /* Center the header */
+  font-size: 2em;
+  margin-bottom: 20px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px; /* Adjust cursor width */
+  background-color: #333; /* Cursor color */
+  margin-left: 4px;
+  animation: blink 1s step-end infinite; /* Blinking animation */
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+.result-author {
+  color: blue;
+  font-weight: bold; /* Optional for emphasis */
+  margin-left: 5px; /* Add spacing if needed */
+}
+
+.result-title {
+  text-decoration: none; /* Optional: remove underline for links */
+  color: inherit; /* Keep the default color for the title */
+}
+
+.result-item {
+  margin-bottom: 10px; /* Space between results */
+}
